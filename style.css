@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    background: url("pexels-pixabay-235613.jpg")no-repeat center center / cover; 
+}
+.container-fluid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr)) ;
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+    gap:35px;
+    padding: 20px 15px;
+    height: 100vh;
+    width:100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    color:#ebe9e3;
+}
+.container-fluid div{
+    border:1px solid #555355;
+    border-radius: 10px;
+    padding-top: 10px;
+   
+}
+
+p, ul, input, .btn{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color:#ebe9e3;
+}
+h5, h4{
+    font-family: "Kodchasan", sans-serif;
+}
+
+.climaDiv{
+    border:none !important;
+}
+.input{
+    color:#fdf0f7;;
+    
+}
+
+
+.btnDelete, .btnEdit{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    margin-left: 20px;
+}
+
+.btnCiudad, .btnDelete{
+    background-color: #fa6e59;
+    color:#ebe9e3;  
+}
+.btnCiudad:hover, .btnDelete:hover{
+    background-color: #f9bfb6;
+    color:#242424;  
+}
+.lista{
+    list-style-type: none;
+    margin-top: 20px;  
+    
+}
+.lista :first-child{
+    width: 100%;
+}
+.lista_tareas{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+.texto{
+    width: 80%;
+}
+.grid{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+
+}
+.grid1{
+    grid-column:1/4 ;
+    grid-row: 1/5;
+}
+.grid1 h4{
+    padding-top:15px;
+}
+
+.grid2{
+    grid-column:1/4;
+    grid-row: 5/10;
+    display: flex;
+    flex-direction: column;   
+}
+.grid2 h5{
+    padding-top: 15px;
+}
+
+.modo{
+    width: 60%;
+}
+
+.grid3{
+    grid-column:4/12 ;
+    grid-row: 1/10;
+    overflow-y: auto;
+}
+.grid3 h4{
+    padding-top: 20px;
+}
+
+.cita{
+    width:100px;
+}
+.btnCita{
+    border:none !important;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-bottom: 6px;
+    gap:4px;
+    
+}
+
+.quote, .btnEdit{
+    background-color:#6e6702; 
+    color: #fdf0f7;  
+}
+.quote:hover, .btnEdit:hover{
+    background-color:#fcec17; 
+    color:#302f2f;   
+}
+.cerrar{
+    background-color:#f5c45a;  
+    color:#302f2f;  
+}
+.submit{
+    background-color:#fa6e59;  
+    color:#ebe9e3;  
+}
+.cerrar:hover, .submit:hover{
+    background-color:#f48462;  
+    color:#302f2f; 
+}
+
+.climaDiv , .citas{
+    border:none !important;
+    background: transparent;
+}
+.mostrar{
+    display:block;
+}
