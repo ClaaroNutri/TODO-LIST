@@ -29,10 +29,13 @@ body{
    
 }
 
-p, ul, input, .btn{
+p, ul, .btn{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    color:#ebe9e3;
+    color:#e7e4de;
+}
+input{
+    color:#585652;
 }
 h5, h4{
     font-family: "Kodchasan", sans-serif;
@@ -42,7 +45,7 @@ h5, h4{
     border:none !important;
 }
 .input{
-    color:#fdf0f7;;
+    color:#827d7f;;
     
 }
 
@@ -123,6 +126,13 @@ h5, h4{
 .cita{
     width:100px;
 }
+.imagenMundo{
+    border:none !important;
+}
+.imagenMundo img{
+    width: 220px;
+    height: 130px;
+}
 .btnCita{
     border:none !important;
     display:flex;
@@ -181,5 +191,13 @@ h5, h4{
     .grid3{
         grid-column:1/12 ;
         grid-row:4/9 ;
+    }
+    .imagenMundo{
+        overflow: hidden;
+    }
+}
+@media (max-width:1020px) {
+    .imagenMundo{
+        overflow: hidden;
     }
 }
